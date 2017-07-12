@@ -1,0 +1,3 @@
+[submodule "jenkins-client.net"]
+	path = jenkins-client.net
+	url = https://github.com/mitutee/jenkins-client.net.git

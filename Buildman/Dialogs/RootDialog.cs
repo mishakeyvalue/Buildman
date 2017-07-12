@@ -22,10 +22,17 @@ namespace Buildman.Dialogs
             // calculate something for us to return
             int length = (activity.Text ?? string.Empty).Length;
 
+            PromptDialog.Choice(context, resume, )
+
             // return our reply to the user
             await context.PostAsync($"You sent {activity.Text} which was {length} characters");
 
             context.Wait(MessageReceivedAsync);
+        }
+
+        private Task resume(IDialogContext context, IAwaitable<object> result)
+        {
+            throw new NotImplementedException();
         }
     }
 }
