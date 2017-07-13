@@ -2,14 +2,19 @@
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
+using Buildman.Infrastructure.ServiceLocator;
+using Buildman.Jenkins.Managers;
 
 namespace Buildman.Dialogs
 {
     [Serializable]
     public class RootDialog : IDialog<object>
     {
+        private IJenkinsManager _jenkinsManager;
+
         public Task StartAsync(IDialogContext context)
         {
+            _jenkinsManager = ServiceLocator.GetService<IJenkinsManager>();
             context.Wait(MessageReceivedAsync);
 
             return Task.CompletedTask;
@@ -22,7 +27,7 @@ namespace Buildman.Dialogs
             // calculate something for us to return
             int length = (activity.Text ?? string.Empty).Length;
 
-            PromptDialog.Choice(context, resume, )
+           
 
             // return our reply to the user
             await context.PostAsync($"You sent {activity.Text} which was {length} characters");
