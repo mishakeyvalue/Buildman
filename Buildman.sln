@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buildman.Jenkins", "Buildma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jenkins_client", "jenkins-client.net\src\jenkins_client\jenkins_client.csproj", "{8EC83433-C56D-4526-8C85-D7AFBBC643C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buildman.Console", "Buildman.Console\Buildman.Console.csproj", "{46457985-835E-46EB-BA7A-C10C7D50FE06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,12 @@ Global
 		{8EC83433-C56D-4526-8C85-D7AFBBC643C3}.JenkinsCI|Any CPU.Build.0 = JenkinsCI|Any CPU
 		{8EC83433-C56D-4526-8C85-D7AFBBC643C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EC83433-C56D-4526-8C85-D7AFBBC643C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46457985-835E-46EB-BA7A-C10C7D50FE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46457985-835E-46EB-BA7A-C10C7D50FE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46457985-835E-46EB-BA7A-C10C7D50FE06}.JenkinsCI|Any CPU.ActiveCfg = Release|Any CPU
+		{46457985-835E-46EB-BA7A-C10C7D50FE06}.JenkinsCI|Any CPU.Build.0 = Release|Any CPU
+		{46457985-835E-46EB-BA7A-C10C7D50FE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46457985-835E-46EB-BA7A-C10C7D50FE06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
