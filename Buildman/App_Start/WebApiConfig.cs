@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Buildman.Infrastructure.ServiceLocator;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,8 @@ namespace Buildman
             };
 
             // Web API configuration and services
+
+            ServiceLocator.Initialize();
 
             // Web API routes
             config.MapHttpAttributeRoutes();
